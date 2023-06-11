@@ -1,4 +1,4 @@
-## updated every 6 hours
+(updated every 6 hours)
 sudo systemctl stop c4ed
 cp $HOME/.c4e-chain/data/priv_validator_state.json $HOME/.c4e-chain/priv_validator_state.json.backup
 rm -rf $HOME/.c4e-chain/data
