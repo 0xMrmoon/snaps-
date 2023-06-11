@@ -1,4 +1,6 @@
-(updated every 6 hours)
+<a href="URL" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Copy%20to%20Clipboard-ffffff?logo=github&style=flat-square" alt="Copy to Clipboard">
+</a>
 sudo systemctl stop c4ed
 cp $HOME/.c4e-chain/data/priv_validator_state.json $HOME/.c4e-chain/priv_validator_state.json.backup
 rm -rf $HOME/.c4e-chain/data
