@@ -1,0 +1,9 @@
+## updated every 6 hours
+sudo systemctl stop c4ed
+cp $HOME/.c4e-chain/data/priv_validator_state.json $HOME/.c4e-chain/priv_validator_state.json.backup
+rm -rf $HOME/.c4e-chain/data
+curl -L https://snapshots.skynodejs.net/c4e/c4e_.tar.lz4| tar -Ilz4 -xf - -C $HOME/.c4e-chain
+mv $HOME/.c4e-chain/priv_validator_state.json.backup $HOME/.c4e-chain/data/priv_validator_state.json
+sudo systemctl restart c4ed && sudo journalctl -u c4ed -f --no-hostname -o cat
+
+
